@@ -4,42 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mukita&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Mil Reais em 7 Dias</title>
+    <title>Mil Reais em 8 Dias</title>
 </head>
 
 <body>
-    <div class="header">
-        <img src="./img/icon.png" alt="logo mario">
+    <div class="mascara-formulario" onclick="fecharFormulario()"></div>
+
+    <div class="caixa-header">
+        <img src="./img/icon.png" alt="icon">
         <a>Home</a>
         <a>Fale Conosco</a>
         <a>Nossos Serviços</a>
+        <a>Logi</a>
     </div>
 
-
-    <div class="caixa-mae">
+    <body class="caixa-mae">
         <div class="caixa-principal">
-            <img src="./img/logo.png" alt="Logo do Mario Bros" class="logo-mario">
+            <img src="./img/logo.png" alt="logo" class="div-img">
             <p>🔧Encanadores mario & Luigi-Resolvendo seus Ploblemas Hidraulicos com Estilo🔧</p>
             <p>Você já encontrou em uma situaçao de emergencia com encanamento?Vazamentos inesperados, canos
-                intupidosou torneiras que não param de pingar?Não se preocupe porque estamos aqui para sauvar o
-                dia.Apresentamos a vocês
-                os encanadores mai famosos do reino dos Cogumelos-mario & Luigin
-            </p>
+                intupidos
+                ou
+                torneiras que não param de pingar?Não se preocupe porque estamos aqui para sauvar o dia.Apresentamos
+                a
+                vocês
+                os encanadores mai famosos do reino dos Cogumelos-mario & Luigin </p>
 
-            <button>Entre em Contato</button>
+            <button onclick="clickeiNoBotao()">Entre em Contato</button>
         </div>
 
         <div>
-            <img src="./img/mario.png" alt="Mario e Luigi" class="mario-luigi">
+            <img src="./img/mario.png" alt="Mario" class="div-mario">
+        </div>
+        </div>
+
+        <div class="caixa-video">
+            <video src="./img/video.mp4" autoplay muted loop></video>
             <div class="mascara"></div>
         </div>
-    </div>
+
+        <a href="https://wa.me/5594981103497?text=Ol%C3%A1%20quero%20ajuda%20dos%20irm%C3%A3o%20Mario."
+            class="link-watsaap">
+            <img src="./img/icons8-whatsapp-480.png" alt="link whatsaap">
+        </a>
+
+        <form action="https://formcarry.com/s/nR0miE_3rc7" method="POST" enctype="multipart/form-data"
+            class="fale-comosco">
+            <input placeholder="Seu nome" type="text" name="nome">
+            <input placeholder="Seu telefone" type="tel" name="telefone">
+            <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+            <button type="submit">Pedir Orçamento</button>
+        </form>
+
+    </body>
 
 
-    <div class="caixa-video">
-        <video src="./img/video.mp4" autoplay muted loop></video>
-    </div>
-</body>
+    <script src="script.js"></script>
 
 </html>
